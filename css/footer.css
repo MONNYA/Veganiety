@@ -1,0 +1,63 @@
+@import "global.css";
+
+footer {
+  position: relative;
+  width: 1920px;
+  height: 850px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+}
+.menu {
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.left-menu {
+  margin-top: 60px;
+}
+.submenu li > p {
+  margin-bottom: 0 auto;
+}
+.sns {
+  position: relative;
+  display: flex;
+}
+.instagram {
+  width: 175px;
+  height: 25px;
+  text-align: center;
+  font-weight: 600;
+  margin-left: 7px;
+  background-color: #26ee3a;
+  border-radius: 30px;
+}
+.submenu li {
+  position: relative;
+  margin-bottom: 42px;
+  line-height: ;
+}
+.submenu li:last-child {
+  margin-bottom: 0;
+}
+
+.submenu li p {
+  color: #26ee3a;
+  margin-bottom: auto;
+}
+.submenu-1 {
+  position: relative;
+  width: 461px;
+  padding: 41px;
+  display: flex;
+  justify-content: space-between;
+}
+.submenu-1 li > a {
+  color: white;
+}
+.btlogo {
+  position: relative;
+  margin-top: 30px;
+}
