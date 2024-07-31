@@ -1,25 +1,58 @@
-window.addEventListener("load", function () {
-  // Logo Swiper
-  const swHeaderLogo = new Swiper(".sw-logo", {
-    effect: "fade",
-    speed: 500,
-    autoplay: {
-      delay: 300,
-      disableOnInteraction: false,
-    },
+// 상단 돋보기
+function toggleExpand() {
+  const lineElement = document.querySelector(".line");
+  lineElement.classList.toggle("expanded");
+}
+
+// 슬라이드
+document.addEventListener("DOMContentLoaded", function () {
+  const prevButton = document.querySelector(".prev");
+  const nextButton = document.querySelector(".next");
+  const slides = document.querySelector(".slides");
+  const dots = document.querySelectorAll(".dot");
+  let currentSlide = 0;
+  const totalSlides = document.querySelectorAll(".slide").length;
+
+  function goToSlide(index) {
+    if (index >= totalSlides) {
+      currentSlide = 0;
+    } else if (index < 0) {
+      currentSlide = totalSlides - 1;
+    } else {
+      currentSlide = index;
+    }
+
+    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+    updateDots();
+  }
+
+  function updateDots() {
+    dots.forEach((dot, index) => {
+      dot.classList.toggle("active", index === currentSlide);
+    });
+  }
+
+  // Automatic slide transition every 5 seconds
+  function startSlideShow() {
+    setInterval(() => {
+      goToSlide(currentSlide + 1);
+    }, 5000); // Change slide every 5000 milliseconds (5 seconds)
+  }
+
+  // Initialize the slideshow
+  startSlideShow();
+
+  prevButton.addEventListener("click", () => {
+    goToSlide(currentSlide - 1);
   });
-  // 마우스오버가 되면 play 하기
-  const swLogoTag = document.querySelector(".sw-logo");
-  swLogoTag.addEventListener("mouseover", function () {
-    //   console.log("마우스오버했지롱");
-    swHeaderLogo.autoplay.start();
+
+  nextButton.addEventListener("click", () => {
+    goToSlide(currentSlide + 1);
   });
-  swLogoTag.addEventListener("mouseout", function () {
-    //   console.log("마우스 아웃");
-    swHeaderLogo.autoplay.stop();
-    //첫 번째 슬라이드로 강제로 이동시킨다
-    swHeaderLogo.slideTo(0);
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      goToSlide(index);
+    });
   });
-  //처음에는 멈춰둔다
-  swHeaderLogo.autoplay.stop();
 });

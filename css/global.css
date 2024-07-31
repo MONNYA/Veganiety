@@ -16,7 +16,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: Inter, "Noto Sans KR", sans-serif;
+  font-family: "Pretendard Variable", Pretendard, Roboto, sans-serif;
   letter-spacing: auto; /* 자간 */
   word-break: keep-all; /* 줄내림 */
 }
@@ -32,3 +32,8 @@ img {
   border: 0;
   vertical-align: middle;
 }
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
