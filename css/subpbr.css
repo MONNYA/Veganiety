@@ -1,0 +1,15 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
+
+.toptxt { margin-top: 275px;margin-left: 100px; font-family: 'Abhaya Libre' !important; font-weight: bold;}
+h1 {font-size: 130px; }
+.toptxt > span {font-size: 80px; font-weight: bold;}
+.img {display: flex; justify-content: center; margin-top: 50px;}
+.img > img {width: 1720px; height: 530px;}
+
+.cambg {position: absolute;}
+.cambg > img {width: 1000px; height: 714px; margin-top: 70px;}
+.cambg > p { position: absolute; top: 350px;
+ left: 180px;font-family: 'Abhaya Libre' !important; font-size: 80px; font-weight: bold;}
+ .cambg > span {position: absolute; top: 470px; left: 180px; font-size: 40px;}
+ h4 { position: absolute; top: 560px; left: 180px; font-size: 18px; font-weight: normal;}
