@@ -56,3 +56,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+function toggleBottomLine() {
+  const bottomLineElement = document.querySelector(".bottom-line");
+  bottomLineElement.classList.toggle("expanded");
+}
