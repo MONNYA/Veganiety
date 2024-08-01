@@ -7,11 +7,30 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/subpbr.css">
 
 </head>
 <body>
-  <div class="toptxt">
+
+<div class="header-inner">
+  <div class="logo">
+    <a href="#"><img src="images/header-logo.png" alt="logo" /></a>
+  </div>
+  <div class="menu">
+    <ul class="menu-inner">
+      <a href="#"><li>About</li></a>
+      <a href="#"><li>Story</li></a>
+      <a href="#"><li>campaign</li></a>
+    </ul>
+  </div>
+  <div class="line" >
+    <img src="images/icon.png" alt="icon" />
+  </div>
+</div>
+</header>
+
+  <div class="toptxt" onclick="toggleExpand()"">
     <h1>Be the Change;)</h1>
     <span>For the Planet, For You.</span>
   </div>
@@ -31,20 +50,54 @@
         우리의 시도가 모여 만드는 새로운 지구를 상상해 보세요.</h4>
   </div>
 
-  <div class="con1">
-    <div class="com1-inner">
+  <div class="textbox">
+    <img src="images/textbox2.png" alt="textbox">
+  </div>
+
+  <div class="box">
+    <div class="box-inner">
+      <span class="icon"><i class="fa fa-search"></i></span>
+        <input type="search" id="search" placeholder="Try It Out!"  autocomplete="off"/>
     </div>
   </div>
 
-  <div class="con2">
-    <div class="com2-inner">
+  <!-- <div class="content">
+    <div class="con1">
+      <div class="con1-inner">
+       <a href="#"><img src="images/Campaign1.png" alt="camp1"></a>
+       <a href="#"><img src="images/Campaign1.png" alt="camp1"></a>
+      </div>
+    </div>
+
+    <div class="con2">
+      <div class="con2-inner">
+          <a href="#"><img src="images/Campaign2.png" alt="camp2"></a>
+      </div>
+    </div>
+
+    <div class="con3">
+      <div class="con3-inner">
+        <a href="#"><img src="images/Campaign3.png" alt="camp3"></a>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div class="box">
+    <div class="ele">
+      <div class="over">
+        <img class="mask1" src="images/Campaign1.png" alt="1">
+        <div class="tangle"></div>
+        <div class="contxt">2024-08-01</div>
+        <img src="images/Campaign1.png" alt="c1">
+        <p>지구를 느낀 1박 2일</p>
+      </div>
+      <img class="mask2" src="images/Campaign1.png" alt="1">
     </div>
   </div>
 
-  <div class="con3">
-    <div class="com3-inner">
-    </div>
-  </div>
 
 </body>
 </html>
+
+
