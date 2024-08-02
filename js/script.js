@@ -57,6 +57,46 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// 문구 루프
+window.onload = function () {
+  const loopContainer = document.querySelector(".loop-container");
+  const loopText = document.querySelector(".loop-text");
+  const clone = loopText.cloneNode(true);
+  loopContainer.appendChild(clone);
+};
+
+// 스토리 슬라이드
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelector(".story-slides");
+  const prevButton = document.querySelector(".prev2");
+  const nextButton = document.querySelector(".next2");
+  const slideCount = document.querySelectorAll(".slide2").length;
+  let currentIndex = 0;
+
+  function updateSlidePosition() {
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  prevButton.addEventListener("click", function () {
+    if (currentIndex > 0) {
+      currentIndex--;
+    } else {
+      currentIndex = slideCount - 1;
+    }
+    updateSlidePosition();
+  });
+
+  nextButton.addEventListener("click", function () {
+    if (currentIndex < slideCount - 1) {
+      currentIndex++;
+    } else {
+      currentIndex = 0;
+    }
+    updateSlidePosition();
+  });
+});
+
+// 하단 푸터
 function toggleBottomLine() {
   const bottomLineElement = document.querySelector(".bottom-line");
   bottomLineElement.classList.toggle("expanded");
