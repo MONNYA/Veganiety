@@ -10,7 +10,7 @@ main {
 .mainimg {
   position: relative;
   margin-right: 58px;
-  margin-top: 87px;
+  margin-top: 120px;
 }
 .mainment {
   position: relative;
@@ -91,11 +91,14 @@ main {
   margin: 217px 114px 120px 120px;
   display: flex;
   align-items: center;
+  height: 900px;
 }
 .image1-1 {
   position: relative;
   /* width: 876px;
   height: 1167px; */
+  margin-top: 275px;
+  height: 100%;
   display: flex;
 }
 
@@ -120,7 +123,7 @@ main {
   position: relative;
   display: flex;
 }
-0 .tag ul > li {
+.tag ul > li {
   margin-left: 20px;
 }
 .tag ul :first-child {
@@ -148,4 +151,30 @@ main {
 }
 .image1-2 {
   position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 20px;
+  gap: 20px;
+}
+.number {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  right:40%;
+  width: 410px;
+  height: 35px;
+}
+.number a {
+  font-size: 30px;
+  margin-left: 30px;
+  text-align: center;
+
+  font-weight: 600;
+}
+.number a:hover{
+  coloi89
 }
