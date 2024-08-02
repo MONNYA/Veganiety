@@ -21,9 +21,12 @@ h1 {font-size: 130px; }
 .cambg > p { position: absolute; top: 280px;
  left: 180px;font-family: 'Abhaya Libre' !important; font-size: 50px; font-weight: 600;}
 
- .cambg > span {position: absolute; top: 400px; left: 180px; font-size: 60px; font-weight: 500; line-height: 30px;}
+.cambg > span {position: absolute; top: 400px; left: 180px; font-size: 60px; font-weight: 500; line-height: 30px;}
 
- h4 { position: absolute; top: 520px; left: 180px; font-size: 18px; font-weight: normal;}
+h4 { position: absolute; top: 520px; left: 180px; font-size: 18px; font-weight: normal;}
+
+
+/* 말풍선, 검색창 */
 
 .textbox {position: absolute; top: 1200px; right: 140px;}
 
@@ -37,27 +40,46 @@ input {box-shadow: 3px 3px 5px 3px rgb(0, 0, 0, .2); outline-style: none;}
 
 .icon {position: absolute; right:0; width: 80px; height: 80px; background-color: #26EE3A; border-radius: 0 50px 50px 0;}
 
-.content {position: relative; margin-top: 1000px;}
 
-.con1-inner {margin-left: 145px; display: flex;}
+/* 콘텐츠 */
+
+.content {position: relative; margin-top: 900px; display: flex; align-items: center; flex-direction: column;}
+
+.con1 {position: relative; display: flex;}
+
+.conbg1 {background-color: rgb(0, 0, 0, .4); position: absolute; left: 0; width: 570px;height: 790px; border-radius: 0 50px 50px 0;}
+
+.date {position: absolute; left: 50px; top: 80px; font-size: 25px; color: #ffffff;}
+
+.btn {position: absolute; right: 40px; bottom: 20px;}
+
+.label {width: 440px; height: 80px; background-color: #00ABFB; position: absolute; left: -30px; top: 120px; border-radius: 0 50px 50px 0;}
+
+.label p {font-size: 40px; position: absolute; top: 28px; color: #ffffff; left: 50px; font-weight: bold;}
+
+.circle {background-color: #fff; width: 40px; height: 40px; border-radius: 50px; position: absolute; right: 30px; top: 20px; box-shadow: 3px 3px 5px 3px rgb(0, 0, 0, .4) inset;}
+
+.text {position: absolute; top: 300px; font-size: 24px; color: #ffffff; left: 30px;}
+
+.con2 {position: relative; display: flex; margin-top: 150px;}
+
+.btn1 {position: absolute; left: 40px; bottom: 20px;}
+
+.text1 {position: absolute; top: 300px; font-size: 24px; color: #ffffff; right: 30px;}
+
+.date1 {position: absolute; right: 50px; top: 80px; font-size: 25px; color: #ffffff;}
+
+.conbg2 {background-color: rgb(0, 0, 0, .4); position: absolute; right: 0; width: 570px;height: 790px; border-radius: 50px 0 0 50px;}
+
+.label1 {width: 440px; height: 80px; background-color: #26EE3A; position: absolute; right: -30px; top: 120px; border-radius: 50px 0 0 50px;}
+
+.label1 p {font-size: 40px; position: absolute; top: 28px; color: #000000; right: 50px; font-weight: bold;}
+
+.circle1 {background-color: #fff; width: 40px; height: 40px; border-radius: 50px; position: absolute; left: 30px; top: 20px; box-shadow: 3px 3px 5px 3px rgb(0, 0, 0, .4) inset;}
+
+.con3 {position: relative; display: flex; margin-top: 150px;}
+
+.conbg3 {background-color: rgb(0, 0, 0, .4); position: absolute; left: 0; width: 570px;height: 790px; border-radius: 0 50px 50px 0;}
 
 
 
-/*  */
-.box {position: relative; width: 1700px; height: 790px;}
-
-.box .ele {position: fixed; width: 1700px; height: 790px;}
-
-.box .over {position: absolute; width: 600px; height: 790px; left: -2px;}
-
-.box .mask1 {position: absolute; width: 570px; height: 790px; left: 42px;}
-
-.tangle { position: absolute; width: 570px; height: 790px; left: 42px; border-radius: 0 50px 50px 0;}
-
-.contxt {position: absolute; top: 80px; left: 90px;}
-
-.box > img {position: absolute; width: 450px; height: 95px; top: 100px;}
-
-.box .div {position: absolute; height: 120px;top: 240px; left: 70px;}
-
-.box .mask2{position: absolute; width: 1100px;height: 790px;left: 610px;}
