@@ -1,15 +1,63 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
 
-.toptxt { margin-top: 275px;margin-left: 100px; font-family: 'Abhaya Libre' !important; font-weight: bold;}
+.header-inner {margin-top: 20px;}
+
+/* 텍스트 박스 */
+.toptxt {margin-top: 140px; margin-left: 100px; font-family: 'Abhaya Libre' !important; font-weight: bold;}
+
 h1 {font-size: 130px; }
+
 .toptxt > span {font-size: 80px; font-weight: bold;}
+
 .img {display: flex; justify-content: center; margin-top: 50px;}
+
 .img > img {width: 1720px; height: 530px;}
 
 .cambg {position: absolute;}
+
 .cambg > img {width: 1000px; height: 714px; margin-top: 70px;}
-.cambg > p { position: absolute; top: 350px;
- left: 180px;font-family: 'Abhaya Libre' !important; font-size: 80px; font-weight: bold;}
- .cambg > span {position: absolute; top: 470px; left: 180px; font-size: 40px;}
- h4 { position: absolute; top: 560px; left: 180px; font-size: 18px; font-weight: normal;}
+
+.cambg > p { position: absolute; top: 280px;
+ left: 180px;font-family: 'Abhaya Libre' !important; font-size: 50px; font-weight: 600;}
+
+ .cambg > span {position: absolute; top: 400px; left: 180px; font-size: 60px; font-weight: 500; line-height: 30px;}
+
+ h4 { position: absolute; top: 520px; left: 180px; font-size: 18px; font-weight: normal;}
+
+.textbox {position: absolute; top: 1200px; right: 140px;}
+
+input {box-shadow: 3px 3px 5px 3px rgb(0, 0, 0, .2); outline-style: none;}
+
+.box-inner {position: absolute; top: 1600px; right: 200px;width: 500px; vertical-align: middle; white-space: nowrap;}
+
+.box-inner input#search {width: 500px; height: 80px; padding-left: 45px; border: none; float: left; background: #F3F3F3; font-size: 10pt; color: #63717f; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px;}
+
+.box-inner .icon {position: absolute; padding: 18px; font-size: 40px; color: #ffffff;}
+
+.icon {position: absolute; right:0; width: 80px; height: 80px; background-color: #26EE3A; border-radius: 0 50px 50px 0;}
+
+.content {position: relative; margin-top: 1000px;}
+
+.con1-inner {margin-left: 145px; display: flex;}
+
+
+
+/*  */
+.box {position: relative; width: 1700px; height: 790px;}
+
+.box .ele {position: fixed; width: 1700px; height: 790px;}
+
+.box .over {position: absolute; width: 600px; height: 790px; left: -2px;}
+
+.box .mask1 {position: absolute; width: 570px; height: 790px; left: 42px;}
+
+.tangle { position: absolute; width: 570px; height: 790px; left: 42px; border-radius: 0 50px 50px 0;}
+
+.contxt {position: absolute; top: 80px; left: 90px;}
+
+.box > img {position: absolute; width: 450px; height: 95px; top: 100px;}
+
+.box .div {position: absolute; height: 120px;top: 240px; left: 70px;}
+
+.box .mask2{position: absolute; width: 1100px;height: 790px;left: 610px;}
