@@ -118,13 +118,14 @@ main {
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
+  transform-origin: center; /* 가운데를 중심으로 확대 */
 }
 
 .controls .prev,
 .controls .next {
   cursor: pointer;
   font-size: 24px;
-  color: white;
+  color: #fff;
   background-color: rgba(255, 255, 255, 0); /* 배경색 추가 */
   padding: 10px;
   border-radius: 50%;
@@ -133,6 +134,11 @@ main {
   align-items: center;
   width: 40px;
   height: 40px;
+}
+
+.prev:hover,
+.next:hover {
+  transform: scale(1.1);
 }
 
 .dots {
@@ -259,7 +265,7 @@ main {
 .story-slide {
   position: relative;
   width: 800px; /* 슬라이드의 가로 너비 */
-  margin: 80px auto; /* 화면 중앙에 위치 */
+  margin: 40px auto; /* 화면 중앙에 위치 */
   overflow: hidden; /* 슬라이드가 부모 요소를 넘지 않도록 설정 */
 }
 
@@ -285,7 +291,7 @@ main {
   color: white;
   text-align: left;
   left: 30px;
-  bottom: 80px;
+  bottom: 70px;
   font-family: "Pretendard Variable", Pretendard, Roboto, sans-serif;
   font-size: 30px;
   font-weight: 600;
@@ -298,7 +304,7 @@ main {
   color: white;
   text-align: center;
   left: 30px;
-  bottom: 30px; /* 이미지 아래에서 위치 조정 */
+  bottom: 20px; /* 이미지 아래에서 위치 조정 */
   display: flex;
   justify-content: center;
   gap: 20px; /* 배지 간의 간격 */
@@ -313,6 +319,7 @@ main {
   font-family: "Pretendard Variable", Pretendard, Roboto, sans-serif;
   font-size: 16px;
   font-weight: 800;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 배경 그림자 추가 */
 }
 
 .story-img-text2 {
@@ -321,7 +328,7 @@ main {
   color: white;
   text-align: left;
   left: 30px;
-  bottom: 80px;
+  bottom: 70px;
   font-family: "Pretendard Variable", Pretendard, Roboto, sans-serif;
   font-size: 30px;
   font-weight: 600;
@@ -334,7 +341,7 @@ main {
   color: white;
   text-align: center;
   left: 30px;
-  bottom: 30px; /* 이미지 아래에서 위치 조정 */
+  bottom: 20px; /* 이미지 아래에서 위치 조정 */
   display: flex;
   justify-content: center;
   gap: 20px; /* 배지 간의 간격 */
@@ -349,6 +356,7 @@ main {
   font-family: "Pretendard Variable", Pretendard, Roboto, sans-serif;
   font-size: 16px;
   font-weight: 800;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 배경 그림자 추가 */
 }
 
 .story-img-text3 {
@@ -357,7 +365,7 @@ main {
   color: white;
   text-align: left;
   left: 30px;
-  bottom: 80px;
+  bottom: 70px;
   font-family: "Pretendard Variable", Pretendard, Roboto, sans-serif;
   font-size: 30px;
   font-weight: 600;
@@ -370,7 +378,7 @@ main {
   color: white;
   text-align: center;
   left: 30px;
-  bottom: 30px; /* 이미지 아래에서 위치 조정 */
+  bottom: 20px; /* 이미지 아래에서 위치 조정 */
   display: flex;
   justify-content: center;
   gap: 20px; /* 배지 간의 간격 */
@@ -385,6 +393,7 @@ main {
   font-family: "Pretendard Variable", Pretendard, Roboto, sans-serif;
   font-size: 16px;
   font-weight: 800;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 배경 그림자 추가 */
 }
 
 .story-controls2 {
@@ -402,7 +411,7 @@ main {
 
 .prev2,
 .next2 {
-  color: #000; /* 버튼 텍스트 색상 */
+  color: #fff; /* 버튼 텍스트 색상 */
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -412,6 +421,234 @@ main {
 .prev2:hover,
 .next2:hover {
   transform: scale(1.1);
+}
+
+.bodytext-2 {
+  font-family: "Pretendard Variable", Pretendard, Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 1.2;
+  line-height: 1.6;
+  margin-top: 300px;
+}
+
+/* 스토리2 영역 */
+
+.story2 {
+  width: 100%;
+  height: 600px;
+  background-color: #eeeeee;
+  margin-top: 150px;
+  margin-bottom: 300px;
+  display: flex; /* Flexbox를 사용하여 자식 요소들을 배치 */
+  justify-content: center; /* 자식 요소들을 수평 중앙 정렬 */
+  align-items: center; /* 자식 요소들을 수직 중앙 정렬 */
+}
+
+.story-gallery {
+  display: flex;
+  flex-wrap: wrap; /* 여러 줄로 배치 */
+  gap: 20px; /* 이미지 컨테이너 사이의 간격 */
+  justify-content: center; /* 자식 요소들을 수평 중앙 정렬 */
+  align-items: center; /* 자식 요소들을 수직 중앙 정렬 */
+  width: 100%; /* 전체 너비를 사용 */
+}
+
+.image-container {
+  position: relative;
+  width: 200px; /* 원하는 이미지 크기에 따라 조정 */
+  height: auto; /* 원하는 이미지 크기에 따라 조정 */
+}
+
+.story-top {
+  margin-bottom: 50px;
+}
+.story-bottom {
+  margin-top: 50px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지가 컨테이너에 맞게 조정됨 */
+  border-radius: 30px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 이미지 위에 반투명 오버레이 */
+  display: flex;
+  border-radius: 30px;
+  padding: 10px; /* 텍스트와 이미지 가장자리 사이의 여백 */
+  box-sizing: border-box; /* 패딩이 요소의 전체 너비에 포함되도록 설정 */
+  opacity: 0; /* 기본 상태에서 오버레이 숨김 */
+  transition: opacity 0.3s ease; /* 호버 시 부드럽게 나타남 */
+}
+
+.image-container:hover .overlay {
+  opacity: 1; /* 호버 시 오버레이 나타남 */
+}
+
+.text {
+  position: absolute; /* 절대 위치로 설정 */
+  bottom: 20px; /* 이미지의 아래쪽에서 10px 떨어지도록 설정 */
+  left: 30px; /* 이미지의 오른쪽에서 10px 떨어지도록 설정 */
+  color: white;
+  font-family: "Pretendard Variable", Pretendard, Roboto, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+/* 캠페인 영역 */
+.campaign {
+  position: relative;
+}
+
+.campaign-img-1 {
+  background: url("../images/Campaign1-1.png") no-repeat center;
+  width: 1290px;
+  height: 700px;
+  background-size: cover;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  border-radius: 30px;
+  position: relative; /* 상대 위치를 설정하여 내부 요소의 절대 위치를 기준으로 함 */
+}
+
+.campaign-title1 {
+  position: absolute;
+  top: 30px; /* 이미지의 상단에서 10px 떨어지게 위치 */
+  left: -20px; /* 왼쪽에서 20px 떨어지게 위치 */
+  background-color: #00abfb; /* 배경색 설정 */
+  padding: 25px 30px; /* 텍스트와 배경 사이의 여백 */
+  border-radius: 0 40px 40px 0; /* 둥근 모서리 */
+  color: white; /* 텍스트 색상 */
+  font-weight: bold;
+  font-family: "Pretendard Variable", Pretendard, Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 배경 그림자 추가 */
+}
+
+.campaign-badge1 {
+  position: absolute;
+  display: flex;
+  align-items: center; /* 배지 내용 세로 중앙 정렬 */
+  right: 30px;
+  bottom: 20px; /* 이미지 아래에서 위치 조정 */
+  padding: 10px; /* 텍스트와 배경 사이의 여백 */
+  border-radius: 10px; /* 둥근 모서리 */
+  gap: 20px; /* 배지 간의 간격 */
+}
+
+.campaign-badge1 span {
+  background-color: #00abfb; /* 배경색 설정 */
+  color: white; /* 텍스트 색상 */
+  padding: 5px 10px; /* 배경과 텍스트 사이의 여백 */
+  border-radius: 50px; /* 배지 모서리 둥글기 */
+  font-family: "Pretendard Variable", Pretendard, Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 배경 그림자 추가 */
+}
+
+.campaign-img-2 {
+  background: url("../images/Campaign2-1.png") no-repeat center;
+  width: 1290px;
+  height: 700px;
+  background-size: cover;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  border-radius: 30px;
+  position: relative; /* 상대 위치를 설정하여 내부 요소의 절대 위치를 기준으로 함 */
+}
+
+.campaign-title2 {
+  position: absolute;
+  top: 30px; /* 이미지의 상단에서 10px 떨어지게 위치 */
+  right: -20px; /* 왼쪽에서 20px 떨어지게 위치 */
+  background-color: #26ee3a; /* 배경색 설정 */
+  padding: 25px 30px; /* 텍스트와 배경 사이의 여백 */
+  border-radius: 40px 0 0 40px; /* 둥근 모서리 */
+  color: #000; /* 텍스트 색상 */
+  font-weight: bold;
+  font-family: "Pretendard Variable", Pretendard, Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 배경 그림자 추가 */
+}
+
+.campaign-badge2 {
+  position: absolute;
+  display: flex;
+  align-items: center; /* 배지 내용 세로 중앙 정렬 */
+  left: 30px;
+  bottom: 20px; /* 이미지 아래에서 위치 조정 */
+  padding: 10px; /* 텍스트와 배경 사이의 여백 */
+  border-radius: 10px; /* 둥근 모서리 */
+  gap: 20px; /* 배지 간의 간격 */
+}
+
+.campaign-badge2 span {
+  background-color: #26ee3a; /* 배경색 설정 */
+  color: #000; /* 텍스트 색상 */
+  padding: 5px 10px; /* 배경과 텍스트 사이의 여백 */
+  border-radius: 50px; /* 배지 모서리 둥글기 */
+  font-family: "Pretendard Variable", Pretendard, Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 배경 그림자 추가 */
+}
+
+.campaign-img-3 {
+  background: url("../images/Campaign3-1.png") no-repeat center;
+  width: 1290px;
+  height: 700px;
+  background-size: cover;
+  margin-top: 30px;
+  margin-bottom: 200px;
+  border-radius: 30px;
+  position: relative; /* 상대 위치를 설정하여 내부 요소의 절대 위치를 기준으로 함 */
+}
+
+.campaign-title3 {
+  position: absolute;
+  top: 30px; /* 이미지의 상단에서 10px 떨어지게 위치 */
+  left: -20px; /* 왼쪽에서 20px 떨어지게 위치 */
+  background-color: #00abfb; /* 배경색 설정 */
+  padding: 25px 30px; /* 텍스트와 배경 사이의 여백 */
+  border-radius: 0 40px 40px 0; /* 둥근 모서리 */
+  color: white; /* 텍스트 색상 */
+  font-weight: bold;
+  font-family: "Pretendard Variable", Pretendard, Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 배경 그림자 추가 */
+}
+
+.campaign-badge3 {
+  position: absolute;
+  display: flex;
+  align-items: center; /* 배지 내용 세로 중앙 정렬 */
+  right: 30px;
+  bottom: 20px; /* 이미지 아래에서 위치 조정 */
+  padding: 10px; /* 텍스트와 배경 사이의 여백 */
+  border-radius: 10px; /* 둥근 모서리 */
+  gap: 20px; /* 배지 간의 간격 */
+}
+
+.campaign-badge3 span {
+  background-color: #00abfb; /* 배경색 설정 */
+  color: white; /* 텍스트 색상 */
+  padding: 5px 10px; /* 배경과 텍스트 사이의 여백 */
+  border-radius: 50px; /* 배지 모서리 둥글기 */
+  font-family: "Pretendard Variable", Pretendard, Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 배경 그림자 추가 */
 }
 
 .dd {
@@ -426,23 +663,26 @@ main {
 footer {
   width: 100%;
   height: 800px;
+  position: relative;
+  z-index: 10;
 }
 .footer-menu {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 800px;
   background-color: black;
   color: white;
+  z-index: 11;
 }
-/* .menu {
-  position: absolute;
-  justify-content: space-between;
-} */
+
 .left-menu {
-  margin-top: 40px;
+  position: absolute;
+  top: 45px;
   margin-left: 40px;
 }
-.submenu li > p {
+
+.footer-left-menu li > p {
+  color: #26ee3a;
   margin-bottom: 0 auto;
 }
 .sns {
@@ -458,28 +698,15 @@ footer {
   background-color: #26ee3a;
   border-radius: 30px;
 }
-.submenu li {
+.footer-left-menu li {
   position: relative;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
-.submenu li:last-child {
+.footer-left-menu li:last-child {
   margin-bottom: 0;
 }
 
-.submenu li p {
-  color: #26ee3a;
-  margin-bottom: auto;
-}
-.submenu-1 {
-  position: relative;
-  width: 461px;
-  padding: 41px;
-  display: flex;
-  justify-content: space-between;
-}
-.submenu-1 li > a {
-  color: white;
-}
+/* 푸터 오른쪽 메뉴 */
 
 .right-menu {
   position: absolute;
@@ -534,18 +761,21 @@ footer {
   background-color: #000; /* 예시로 다른 배경색 설정 */
 }
 
-.btlogo {
-  position: relative;
-  margin-top: 400px;
+.btlogo-1 {
+  position: absolute; /* 위치를 절대 위치로 설정 */
+  bottom: 0; /* 푸터의 하단에 배치 */
+  left: 0; /* 왼쪽을 기준으로 배치 */
   width: 100%;
-  height: 361px;
+  height: auto; /* 높이를 자동으로 설정 */
+  max-height: 361px; /* 최대 높이를 설정 */
   display: flex;
   justify-content: center;
+  z-index: 20;
 }
 
-.btlogo img {
+.btlogo-1 > img {
   width: 100%;
-  height: 100%;
-  margin-top: 400px;
-  object-fit: contain;
+  height: auto;
+  object-fit: contain; /* 이미지 비율을 유지하면서 부모 요소에 맞춤 */
+  z-index: 20;
 }
