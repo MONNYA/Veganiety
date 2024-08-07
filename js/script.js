@@ -4,6 +4,15 @@ function toggleExpand() {
   lineElement.classList.toggle("expanded");
 }
 
+// 모바일 메뉴
+function toggleMenu() {
+  var menuWrap = document.querySelector(".mbmenu-wrap");
+  var mbNav = document.querySelector(".mb-nav");
+
+  menuWrap.classList.toggle("show");
+  mbNav.classList.toggle("show");
+}
+
 // 슬라이드
 document.addEventListener("DOMContentLoaded", function () {
   const prevButton = document.querySelector(".prev");

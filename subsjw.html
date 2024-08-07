@@ -7,30 +7,51 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/subsjw.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- js -->
     <script src="js/script.js"></script>
   </head>
   <body>
-    <header>
-      <!-- header start -->
-      <div class="header-inner">
-        <div class="logo">
-          <a href="#"><img src="images/header-logo.png" alt="logo" /></a>
-        </div>
-        <div class="menu">
-          <ul class="menu-inner">
-            <li>About</li>
-            <li>Story</li>
-            <li>campaign</li>
-          </ul>
-        </div>
-        <div class="line" onclick="toggleExpand()">
-          <img src="images/icon.png" alt="icon" />
-        </div>
+    <!-- mb nav -->
+    <button class="mb-nav" onclick="toggleMenu()">
+      <span class="icon-bar top"></span>
+      <span class="icon-bar middle"></span>
+      <span class="icon-bar bottom"></span>
+    </button>
+    
+
+     <!-- mobile menu start -->
+     <div class="mbmenu-wrap">
+      <div class="mbmenu-view">
+        <ul class="mbmenu">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="subsjw.html">STORY</a></li>
+          <li><a href="subpbr.html">CAMPAIGN</a></li>
+        </ul>
       </div>
-    </header>
-    <!-- header end -->
+    </div>
+    <!-- mobile menu end -->
+
+  <header>
+    <!-- header start -->
+    <div class="header-inner">
+      <div class="logo">
+        <a href="index.html"><img src="images/header-logo.png" alt="logo" /></a>
+      </div>
+      <div class="menu">
+        <ul class="menu-inner">
+          <li><a href="#about">About</a></li>
+          <li><a href="subsjw.html">Story</a></li>
+          <li><a href="subpbr.html">Campaign</a></li>
+        </ul>
+      </div>
+      <div class="line" onclick="toggleExpand()">
+        <img src="images/icon.png" alt="icon" />
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
 
     <!-- 메인 상단  -->
     <main>
@@ -51,8 +72,16 @@
           비거니티가 모은 친근하고 재미있는 비거니즘과 에코라이프를 향한 이야기
           속에서 실천 가능한 아이디어를 찾아보세요.
         </p>
-        <div class="serch">
+        <!-- <div class="serch">
           <div class="mirror"><img src="images/mirror-1.png" alt="" /></div>
+        </div> -->
+
+        <!-- <i class="fa fa-search"></i> -->
+        <div class="box">
+          <div class="box-inner">
+            <span class="icon"><img src="images/mirror-1.png" alt=""></span>
+              <input type="search" id="search" placeholder="Try It Out!"  autocomplete="off"/>
+          </div>
         </div>
       </div>
       <!-- image -->
@@ -68,47 +97,90 @@
         <div class="group">
       <div class="image1-1">
         <div class="coffee">
-          <img src="images/coffee.png" alt="" /> </div>
-         <div class="tag">
-          <span>환경을 생각하며 커피를 즐기는 법</span>
+          <img src="images/coffee.png" alt="" /> 
+          <div class="tag">
+            <span>환경을 생각하며 커피를 즐기는 법</span>
+              <ul>
+                <li><a href="">Eco Life</a></li>
+                <li><a href="">Zero Waste</a></li>
+                <li><a href="">Earth</a></li>
+              </ul>
+            </div>
+        </div>
+        
+       <div class="soap">
+          <img src="images/soap.png" alt="" />
+          <div class="tag1">
+            <span>수제 비누를 만들어 보는건 어때요?</span>
+              <ul>
+                <li><a href="">Eco Life</a></li>
+                <li><a href="">Zero Waste</a></li>
+                <li><a href="">Earth</a></li>
+              </ul>
+            </div>
+        </div> 
+    </div> 
+      <div class="greenmark"> 
+        <img src="images/greentag.png" alt="">
+        <div class="tag2">
+          <span>그린슈머를 위한 인증마크</span>
             <ul>
               <li><a href="">Eco Life</a></li>
               <li><a href="">Zero Waste</a></li>
               <li><a href="">Earth</a></li>
             </ul>
           </div>
-       <div class="soap">
-          <img src="images/soap.png" alt="" />
-        </div> 
-    </div> 
-      <div class="greenmark">
-        <img src="images/greentag.png" alt="">
       </div>
 </div>
       <div class="image1-2">
        <div class="green">
-        <img src="images/green.png" alt="">
-       </div>
+        <img src="images/salad.png" alt="">
+        <div class="tag3">
+          <span>그린슈머를 위한 인증마크</span>
+            <ul>
+              <li><a href="">Eco Life</a></li>
+              <li><a href="">Zero Waste</a></li>
+              <li><a href="">Earth</a></li>
+            </ul>
+          </div>
+      </div>
        <div class="potato">
         <img src="images/potato.png" alt="">
-       </div>
+        <div class="tag4">
+          <span>미니멀리스트 히조의 제로웨이스트템 10가지</span>
+            <ul>
+              <li><a href="">Eco Life</a></li>
+              <li><a href="">Zero Waste</a></li>
+              <li><a href="">Earth</a></li>
+            </ul>
+          </div>
+      </div>
       </div>
     </div>  
 
     <!-- 페이지넘버 -->
+    <div class="centernumber">
     <div class="number">
       <a href="">
         <img src="images/numberbar.png" alt="">
       </a>
-      <a href="">1</a>
+      <ul class="pagenumber">
+        <li><a href="">1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li><a href="">5</a></li>
+      </ul>
+      <!-- <a href="">1</a>
       <a href="">2</a>
       <a href="">3</a>
       <a href="">4</a>
-      <a href="">5</a>
+      <a href="">5</a> -->
       <a href="">
-        <img src="/images/numberbar2.png " alt="">
+        <img src="images/numberbar2.png " alt="">
       </a>
     </div>
+  </div>
 
    <!-- footer start -->
       <footer>
@@ -135,9 +207,9 @@
           </div>
           <div class="right-menu">
             <ul class="footer-right-menu">
-              <li>About</li>
-              <li>Story</li>
-              <li>campaign</li>
+              <li><a href="#">About</a></li>
+              <li><a href="subsjw.html">Story</a></li>
+              <li><a href="subpbr.html">campaign</a></li>
             </ul>
           </div>
           <div class="bottom-line" onclick="toggleBottomLine()">
